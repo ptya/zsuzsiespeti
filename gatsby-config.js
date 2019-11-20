@@ -7,6 +7,7 @@ module.exports = {
     description: 'Peter Szabo, Web Developer',
     url: 'https://www.zsuzsiespetiegybekel.hu',
     image: '/images/favicon.ico', // TODO:
+    author: 'Peter Szabo',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
