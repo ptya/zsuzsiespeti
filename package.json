@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "zsuzsiespeti",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Wedding site",
+  "version": "1.0.0",
+  "author": "Peter Szabo <petr.szab@gmail.com>",
   "dependencies": {
     "gatsby": "^2.17.11",
     "gatsby-image": "^2.2.31",
@@ -13,13 +13,28 @@
     "gatsby-plugin-sharp": "^2.2.37",
     "gatsby-source-filesystem": "^2.1.36",
     "gatsby-transformer-sharp": "^2.3.3",
+    "gatsby-plugin-root-import": "^2.0.5",
+    "gatsby-plugin-styled-components": "^3.1.2",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "babel-eslint": "10.0.3",
+    "babel-plugin-styled-components": "^1.10.6",
+    "eslint": "6.6.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "6.5.0",
+    "eslint-config-wesbos": "0.0.19",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-html": "6.0.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-react": "7.16.0",
+    "eslint-plugin-react-hooks": "2.2.0"
   },
   "keywords": [
     "gatsby"
@@ -40,5 +55,52 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "eslintConfig": {
+    "extends": [
+      "wesbos"
+    ],
+    "settings": {
+      "import/resolver": {
+        "alias": [
+          [
+            "components",
+            "./src/components"
+          ],
+          [
+            "assets",
+            "./src/assets"
+          ],
+          [
+            "pages",
+            "./src/pages"
+          ],
+          [
+            "utils",
+            "./src/utils"
+          ]
+        ]
+      }
+    },
+    "rules": {
+      "react/jsx-props-no-spreading": "off",
+      "jsx-a11y/label-has-associated-control": [
+        2,
+        {
+          "labelComponents": [
+            "Label"
+          ],
+          "labelAttributes": [
+            "label"
+          ],
+          "controlComponents": [
+            "Input"
+          ],
+          "assert": "htmlFor",
+          "depth": 3
+        }
+      ],
+      "jsx-a11y/label-has-for": "off"
+    }
   }
 }
