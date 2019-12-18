@@ -4,8 +4,8 @@ module.exports = {
   siteMetadata: {
     title: 'Zsuzsi & Peti',
     description: 'Minden, amit tudni lehet Zsuzsi & Peti házasságáról :)',
-    url: 'https://www.zsuzsiespetiegybekel.hu',
-    image: '/images/share.png',
+    url: 'https://zsuzsiespetiegybekel.hu',
+    image: '/images/share.jpg',
     author: 'Peter Szabo',
   },
   plugins: [
