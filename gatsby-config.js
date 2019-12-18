@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     title: 'Zsuzsi & Peti',
-    description: 'Zsuzsi & Peti házassági információs oldala',
+    description: 'Minden, amit tudni lehet Zsuzsi & Peti házasságáról :)',
     url: 'https://www.zsuzsiespetiegybekel.hu',
     image: '/assets/images/favicon.png', // TODO:
     author: 'Peter Szabo',
