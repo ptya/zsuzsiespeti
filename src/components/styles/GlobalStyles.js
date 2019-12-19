@@ -44,6 +44,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
+    font-family: "Trajan Pro Regular",  sans-serif;
     font-size: 1.6rem;
   }
 
