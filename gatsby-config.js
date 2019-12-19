@@ -5,7 +5,7 @@ module.exports = {
     title: 'Zsuzsi & Peti',
     description: 'Minden, amit tudni lehet Zsuzsi & Peti házasságáról :)',
     url: 'https://zsuzsiespetiegybekel.hu',
-    image: '/images/share.jpg',
+    image: '/images/share_new.jpg',
     author: 'Peter Szabo',
   },
   plugins: [
