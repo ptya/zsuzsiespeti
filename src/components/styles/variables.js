@@ -1,8 +1,11 @@
 export const colors = {
-  bg: '#a3947d',
-  velvet: '#5f2e3a',
-  black: '#222',
+  bg: '#a99c85',
+  velvet: '#652a2a',
+  black: '#382d20',
   grey: '#333',
+  green: '#344117',
+  lightBg: '#c6bba6',
+  divider: '#a4ab7a',
 }
 
 const size = {
