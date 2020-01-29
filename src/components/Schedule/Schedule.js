@@ -1,5 +1,44 @@
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 
-const Schedule = () => <div>Schedule</div>
+// local styles
+import { ScheduleWrapper, Line, Timetable } from './Schedule.styled'
+
+// TODO: background
+
+const Schedule = () => {
+  const { line } = useStaticQuery(graphql`
+    query {
+      line: file(relativePath: { eq: "line-mid.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  return (
+    <ScheduleWrapper>
+      <h1>Program</h1>
+      <p>
+        Terveink szerint így zajlik majd a délután és az este, de nem esünk
+        kétségbe, ha mégsem. <br />A lényeg, hogy gyere, és úgyis minden szuper
+        lesz, ha ti már ott lesztek!
+      </p>
+      <Line fluid={line.childImageSharp.fluid} alt="" />
+      <Timetable>
+        <span>16:00 Vendégvárás</span>
+        <span>17:00 Szertartás</span>
+        <span>17:30 Fotózkodás</span>
+        <span>18:00 Vacsora</span>
+        <span>20:30 Nyitótánc</span>
+        <span>22:00 Torta</span>
+        <span>23:30 Menyecsketánc</span>
+        <span>00:00 Éjféli menü</span>
+      </Timetable>
+    </ScheduleWrapper>
+  )
+}
 
 export default Schedule

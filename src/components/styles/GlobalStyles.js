@@ -60,9 +60,15 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 0.5px;
   }
 
-  a, p {
+  a {
     font-family: "Trajan Pro Regular",  sans-serif;
     font-size: 1.6rem;
+  }
+
+  p {
+    font-family: 'DIN Next W1G', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 0.8px;
   }
 
   * {

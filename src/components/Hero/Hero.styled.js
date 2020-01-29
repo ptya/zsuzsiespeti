@@ -2,33 +2,20 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 import { colors } from 'components/styles/variables'
+import { Wrapper } from 'components/styles/shared'
 
-export const Wrapper = styled.article`
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+export const HeroWrapper = styled(Wrapper)`
   margin: 5rem auto 3.5rem;
 
   h1 {
-    font-size: 46px;
-    color: ${colors.velvet};
-    text-transform: uppercase;
-    letter-spacing: 3.45px;
     margin: 1.2rem auto 0.8rem;
   }
 
   h2 {
-    font-family: 'Trajan Pro Bold', sans-serif;
-    font-size: 25px;
-    letter-spacing: 5px;
     margin-bottom: 0;
   }
 
   h3 {
-    font-size: 20px;
-    letter-spacing: 1.5px;
     text-align: center;
     margin-bottom: 0;
   }

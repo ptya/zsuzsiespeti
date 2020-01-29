@@ -7,6 +7,7 @@ export const CalendarBack = styled(Img)`
   width: 13rem;
   position: absolute;
 `
+
 export const calendarImgStyle = {
   position: 'absolute',
   zIndex: -100,
@@ -14,7 +15,6 @@ export const calendarImgStyle = {
 }
 
 export const Day = styled.p`
-  font-family: 'DIN Next W1G', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Calendar from './Calendar'
 
 // local styles
-import { Wrapper, Line, Plant, Rsvp } from './Hero.styled'
+import { HeroWrapper, Line, Plant, Rsvp } from './Hero.styled'
 
 const Hero = () => {
   const { lineTop, lineBottom, plant } = useStaticQuery(graphql`
@@ -34,7 +34,7 @@ const Hero = () => {
     }
   `)
   return (
-    <Wrapper>
+    <HeroWrapper>
       <Line fluid={lineTop.childImageSharp.fluid} alt="" />
       <h1>Zsuzsi & Peti</h1>
       <Line fluid={lineBottom.childImageSharp.fluid} alt="" />
@@ -46,7 +46,7 @@ const Hero = () => {
       <Plant fluid={plant.childImageSharp.fluid} alt="" />
       <Calendar />
       <Rsvp>Visszajelzés</Rsvp>
-    </Wrapper>
+    </HeroWrapper>
   )
 }
 
