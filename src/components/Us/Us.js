@@ -4,11 +4,7 @@ import PropTypes from 'prop-types'
 import { Image } from './Us.styled'
 
 const Us = ({ data }) => (
-  <Image
-    className="pic"
-    fluid={data.imageOne.childImageSharp.fluid}
-    alt="Peter Szabo"
-  />
+  <Image fluid={data.imageOne.childImageSharp.fluid} alt="Rólunk" />
 )
 
 Us.propTypes = {

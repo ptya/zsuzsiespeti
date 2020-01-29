@@ -55,6 +55,7 @@ const GlobalStyle = createGlobalStyle`
   h2,
   h3 {
     font-family: "Trajan Pro Regular",  sans-serif;
+    font-style: normal;
     font-size: 2rem;
     letter-spacing: 0.5px;
   }
