@@ -5,7 +5,7 @@ export const colors = {
   grey: '#333',
   green: '#344117',
   lightBg: '#c6bba6',
-  divider: '#a4ab7a',
+  menu: '#867b67',
 }
 
 const size = {

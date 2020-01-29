@@ -12,20 +12,23 @@ const Nav = styled.nav`
   align-items: center;
 
   a {
-    color: ${colors.lightBg};
+    color: ${colors.menu};
     margin: auto 1rem;
     width: 16rem;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 0.12rem;
   }
 `
 
 const Divider = styled.div`
   width: 1px;
   height: 2rem;
-  background: ${colors.divider};
+  background: ${colors.menu};
   margin: auto 1rem;
+  opacity: 0.5;
 `
 
 export { Nav, Divider }
