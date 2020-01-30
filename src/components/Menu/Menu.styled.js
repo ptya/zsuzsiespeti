@@ -7,7 +7,7 @@ import { Wrapper } from 'components/styles/shared'
 import background from 'assets/images/menu-bg-small.png'
 
 export const MenuWrapper = styled(Wrapper)`
-  background-color: ${colors.secondaryBg};
+  background-color: ${colors.menuBg};
   background-image: url(${background});
   width: 100%;
 

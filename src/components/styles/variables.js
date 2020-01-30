@@ -1,6 +1,7 @@
 export const colors = {
   bg: '#a99c85',
-  secondaryBg: '#b9ab96',
+  menuBg: '#b9ab96',
+  afterBg: '#a4977f',
   velvet: '#652a2a',
   black: '#382d20',
   grey: '#333',
