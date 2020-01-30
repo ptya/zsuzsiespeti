@@ -25,6 +25,7 @@ export const Timetable = styled.p`
   font-family: 'Trajan Pro Regular', sans-serif;
   font-size: 2.4rem;
   word-spacing: 0.5rem;
+  letter-spacing: 1.8px;
 
   span {
     margin: 1rem 0;

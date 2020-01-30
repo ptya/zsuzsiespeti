@@ -5,7 +5,7 @@ import { colors } from 'components/styles/variables'
 import { Wrapper } from 'components/styles/shared'
 
 export const HeroWrapper = styled(Wrapper)`
-  margin: 5rem auto 3.5rem;
+  padding: 5rem 0 3.5rem;
 
   h1 {
     margin: 1.2rem auto 0.8rem;
@@ -32,7 +32,7 @@ export const Plant = styled(Img)`
 // TODO: hover
 export const Rsvp = styled.button`
   position: absolute;
-  bottom: -6.5rem;
+  bottom: -3rem;
   width: 20rem;
   height: 6rem;
   border: 0;

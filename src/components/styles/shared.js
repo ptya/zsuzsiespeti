@@ -8,7 +8,8 @@ export const Wrapper = styled.article`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5rem auto;
+  /* margin: 5rem auto; */
+  padding: 5rem 0;
 
   h1 {
     font-size: 46px;

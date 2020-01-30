@@ -47,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${colors.darkBg};
+    background-color: ${colors.bg};
     background-image: url(${background});
   }
 
