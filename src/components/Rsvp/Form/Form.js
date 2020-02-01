@@ -60,7 +60,6 @@ const Form = ({ setError }) => {
   return (
     <Formik
       initialValues={initialValues}
-      initialErrors={{ state: 'empty' }}
       validate={validate}
       onSubmit={onSubmit}
     >
