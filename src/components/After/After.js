@@ -36,18 +36,16 @@ const After = () => {
       </Contacts>
       <Line fluid={line.childImageSharp.fluid} alt="" />
       <p className="message">
-        <span>
-          Legalább 1 óra kiszállási idővel számolj (sosem lehet tudni), és
-          javasoljuk, hogy egy fuvarra többen csapjatok le!
-        </span>
-        <span>
-          Ha inkább nem mennél haza éjszaka/hajnalban, Budakeszin és környékén
-          érdemes{' '}
-          <a href="TBD" target="_blank">
-            szállásokat böngészni
-          </a>
-          .
-        </span>
+        Legalább 1 óra kiszállási idővel számolj (sosem lehet tudni), és
+        javasoljuk, hogy egy fuvarra többen csapjatok le!
+      </p>
+      <p className="message">
+        Ha inkább nem mennél haza éjszaka/hajnalban, Budakeszin és környékén
+        érdemes{' '}
+        <a href="TBD" target="_blank">
+          szállásokat böngészni
+        </a>
+        .
       </p>
     </AfterWrapper>
   )

@@ -8,10 +8,7 @@ import background from 'assets/images/after-bg-small.png'
 
 export const Contacts = styled.p`
   margin: 1rem auto;
-
-  br {
-    line-height: 3.5rem;
-  }
+  line-height: 3.5rem;
 `
 
 export const AfterWrapper = styled(Wrapper)`
@@ -42,11 +39,7 @@ export const AfterWrapper = styled(Wrapper)`
 
   .message {
     width: 47rem;
-    margin: 0;
-    span {
-      display: block;
-      margin: 1rem auto 2rem;
-    }
+    margin: 1rem auto;
 
     a {
       font-family: 'DIN Next W1G', sans-serif;
