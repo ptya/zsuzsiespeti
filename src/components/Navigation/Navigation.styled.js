@@ -10,6 +10,10 @@ const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 
   a {
     color: ${colors.menu};

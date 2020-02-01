@@ -5,6 +5,7 @@ import { colors } from 'components/styles/variables'
 import { Wrapper } from 'components/styles/shared'
 
 export const HeroWrapper = styled(Wrapper)`
+  margin-top: 5.5rem;
   padding: 5rem 0 3.5rem;
   overflow: unset;
 
