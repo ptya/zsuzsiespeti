@@ -10,6 +10,7 @@ export const Wrapper = styled.article`
   align-items: center;
   padding: 5rem 0;
   width: 100%;
+  overflow: hidden;
 
   h1 {
     font-size: 46px;

@@ -6,6 +6,7 @@ import { Wrapper } from 'components/styles/shared'
 
 export const HeroWrapper = styled(Wrapper)`
   padding: 5rem 0 3.5rem;
+  overflow: unset;
 
   h1 {
     margin: 1.2rem auto 0.8rem;

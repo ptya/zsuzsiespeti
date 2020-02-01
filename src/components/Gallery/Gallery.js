@@ -8,6 +8,7 @@ import {
   Camera,
   Plant,
   plantStyle,
+  Info,
 } from './Gallery.styled'
 
 const Gallery = () => {
@@ -38,12 +39,12 @@ const Gallery = () => {
   `)
   return (
     <GalleryWrapper>
-      <div className="info">
+      <Info>
         <h1>Galéria</h1>
         <p>Idővel itt fogod megtalálni a legjobb közös pillanatainkat.</p>
         <p>Gyere vissza később!</p>
         <Camera fluid={camera.childImageSharp.fluid} alt="Kamera" />
-      </div>
+      </Info>
       <Photo fluid={photo.childImageSharp.fluid} alt="Rólunk" />
       <Plant fluid={plant.childImageSharp.fluid} alt="" style={plantStyle} />
     </GalleryWrapper>

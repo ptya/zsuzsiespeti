@@ -53,3 +53,13 @@ export const GalleryWrapper = styled(Wrapper)`
     }
   }
 `
+
+export const Info = styled.div`
+  grid-area: info;
+  align-self: flex-start;
+  z-index: 1;
+
+  p {
+    width: 32rem;
+  }
+`

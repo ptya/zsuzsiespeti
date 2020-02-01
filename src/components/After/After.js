@@ -2,14 +2,28 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 // local styles
-import { AfterWrapper, Contacts, Line } from './After.styled'
-
-// TODO: link to accomodations
+import {
+  AfterWrapper,
+  Contacts,
+  Line,
+  Message,
+  Plant1,
+  Plant2,
+  plant1Style,
+  plant2Style,
+} from './After.styled'
 
 const After = () => {
-  const { line } = useStaticQuery(graphql`
+  const { line, plant } = useStaticQuery(graphql`
     query {
       line: file(relativePath: { eq: "line-mid.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      plant: file(relativePath: { eq: "plant-bg-green.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -35,18 +49,24 @@ const After = () => {
         Budapest Taxi: +36 1 777 7777
       </Contacts>
       <Line fluid={line.childImageSharp.fluid} alt="" />
-      <p className="message">
+      <Message>
         Legalább 1 óra kiszállási idővel számolj (sosem lehet tudni), és
         javasoljuk, hogy egy fuvarra többen csapjatok le!
-      </p>
-      <p className="message">
+      </Message>
+      <Message>
         Ha inkább nem mennél haza éjszaka/hajnalban, Budakeszin és környékén
         érdemes{' '}
-        <a href="TBD" target="_blank">
+        <a
+          href="https://bit.ly/2Uh1SIk"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           szállásokat böngészni
         </a>
         .
-      </p>
+      </Message>
+      <Plant1 fluid={plant.childImageSharp.fluid} alt="" style={plant1Style} />
+      <Plant2 fluid={plant.childImageSharp.fluid} alt="" style={plant2Style} />
     </AfterWrapper>
   )
 }
