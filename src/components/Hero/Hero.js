@@ -1,5 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
+
+// context
+import ModalContext from '../context/ModalContext'
 
 // local components
 import Calendar from './Calendar'
@@ -33,6 +36,9 @@ const Hero = () => {
       }
     }
   `)
+
+  const { setModal } = useContext(ModalContext)
+
   return (
     <HeroWrapper>
       <Line fluid={lineTop.childImageSharp.fluid} alt="" />
@@ -45,7 +51,7 @@ const Hero = () => {
       </h3>
       <Plant fluid={plant.childImageSharp.fluid} alt="" />
       <Calendar />
-      <Rsvp>Visszajelzés</Rsvp>
+      <Rsvp onClick={() => setModal(true)}>Visszajelzés</Rsvp>
     </HeroWrapper>
   )
 }

@@ -10,6 +10,8 @@ export const colors = {
   green: '#344117',
   lightBg: '#c6bba6',
   menu: '#867b67',
+  modalBg: '#bfb49f',
+  darken: '#00000063',
 }
 
 const size = {
