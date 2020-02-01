@@ -1,6 +1,10 @@
-import React, { useLayoutEffect, useState } from 'react'
-import { animated, useSpring, config } from 'react-spring'
+import React, { useLayoutEffect, useState, useContext } from 'react'
+import { animated, useSpring } from 'react-spring'
 
+// context
+import ModalContext from 'components/context/ModalContext'
+
+// local styles
 import { Nav, Divider } from './Navigation.styled'
 
 const AnimatedNav = animated(Nav)
@@ -12,6 +16,8 @@ const Navigation = () => {
   const animation = useSpring({
     top: on ? 0 : -55,
   })
+
+  const { isSent, setModal } = useContext(ModalContext)
 
   useLayoutEffect(() => {
     const handleScroll = () => {
@@ -29,8 +35,14 @@ const Navigation = () => {
 
   return (
     <AnimatedNav style={animation}>
-      <a href="#rsvp">Visszajelzés</a>
-      <Divider />
+      {!isSent && (
+        <>
+          <button type="button" onClick={() => setModal(true)}>
+            Visszajelzés
+          </button>
+          <Divider />
+        </>
+      )}
       <a href="#schedule">Programok</a>
       <Divider />
       <a href="#menu">Menü</a>

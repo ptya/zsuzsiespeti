@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import Img from 'gatsby-image'
 
 import { colors } from 'components/styles/variables'
-import { Wrapper } from 'components/styles/shared'
+import { Wrapper, Button } from 'components/styles/shared'
 
 export const HeroWrapper = styled(Wrapper)`
   margin-top: 5.5rem;
@@ -32,17 +32,14 @@ export const Plant = styled(Img)`
 `
 
 // TODO: hover
-export const Rsvp = styled.button`
+export const Rsvp = styled(Button)`
   position: absolute;
   bottom: -3rem;
-  width: 20rem;
-  height: 6rem;
-  border: 0;
-  font-family: 'Trajan Pro Regular', sans-serif;
-  font-size: 1.5rem;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
-  background: ${colors.green};
-  color: ${colors.lightBg};
   z-index: 100;
+
+  ${props =>
+    props.disabled &&
+    css`
+      cursor: default;
+    `}
 `

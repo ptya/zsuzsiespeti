@@ -9,6 +9,8 @@ import PropTypes from 'prop-types'
 
 import { ModalProvider } from './src/components/context/ModalContext'
 
+require('typeface-open-sans')
+
 export const wrapRootElement = ({ element }) => (
   <ModalProvider>{element}</ModalProvider>
 )

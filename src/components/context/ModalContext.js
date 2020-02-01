@@ -5,12 +5,15 @@ const ModalContext = createContext()
 
 const ModalProvider = ({ children }) => {
   const [isModal, setModal] = useState(false)
+  const [isSent, setSent] = useState(false)
 
   return (
     <ModalContext.Provider
       value={{
         isModal,
         setModal,
+        isSent,
+        setSent,
       }}
     >
       {children}

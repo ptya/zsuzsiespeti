@@ -15,7 +15,8 @@ const Nav = styled.nav`
   width: 100%;
   z-index: 999;
 
-  a {
+  a,
+  button {
     color: ${colors.menu};
     margin: auto 1rem;
     width: 16rem;
@@ -24,6 +25,13 @@ const Nav = styled.nav`
     text-decoration: none;
     font-size: 1.2rem;
     letter-spacing: 0.12rem;
+  }
+
+  button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-family: 'Trajan Pro Regular', sans-serif;
   }
 `
 

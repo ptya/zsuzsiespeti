@@ -12,6 +12,7 @@ export const colors = {
   menu: '#867b67',
   modalBg: '#bfb49f',
   darken: '#00000063',
+  modalTitle: '#a79b85',
 }
 
 const size = {

@@ -30,3 +30,16 @@ export const Wrapper = styled.article`
     letter-spacing: 1.5px;
   }
 `
+
+export const Button = styled.button`
+  width: 20rem;
+  height: 6rem;
+  border: 0;
+  font-family: 'Trajan Pro Regular', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  background: ${colors.green};
+  color: ${colors.lightBg};
+  cursor: pointer;
+`
