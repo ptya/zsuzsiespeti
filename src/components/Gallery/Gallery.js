@@ -2,10 +2,16 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 // local styles
-import { GalleryWrapper, Photo, Camera } from './Gallery.styled'
+import {
+  GalleryWrapper,
+  Photo,
+  Camera,
+  Plant,
+  plantStyle,
+} from './Gallery.styled'
 
 const Gallery = () => {
-  const { camera, photo } = useStaticQuery(graphql`
+  const { camera, photo, plant } = useStaticQuery(graphql`
     query {
       camera: file(relativePath: { eq: "camera.png" }) {
         childImageSharp {
@@ -14,7 +20,14 @@ const Gallery = () => {
           }
         }
       }
-      photo: file(relativePath: { eq: "gallery-photo.png" }) {
+      photo: file(relativePath: { eq: "gallery-picture.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      plant: file(relativePath: { eq: "plant-bg-brown.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -32,6 +45,7 @@ const Gallery = () => {
         <Camera fluid={camera.childImageSharp.fluid} alt="Kamera" />
       </div>
       <Photo fluid={photo.childImageSharp.fluid} alt="Rólunk" />
+      <Plant fluid={plant.childImageSharp.fluid} alt="" style={plantStyle} />
     </GalleryWrapper>
   )
 }
