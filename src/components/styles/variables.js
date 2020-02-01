@@ -4,6 +4,7 @@ export const colors = {
   afterBg: '#a4977f',
   galleryBg: '#8f826a',
   velvet: '#652a2a',
+  red: '#cc342c',
   black: '#382d20',
   grey: '#333',
   green: '#344117',

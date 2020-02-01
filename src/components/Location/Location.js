@@ -1,6 +1,9 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
+// local components
+import Map from './Map'
+
 // local styles
 import { LocationWrapper, Plant, plantStyle } from './Location.styled'
 
@@ -16,6 +19,7 @@ const Location = () => {
       }
     }
   `)
+  console.log(process.env.GATSBY_MAPBOX_API_TOKEN)
 
   return (
     <LocationWrapper id="location">
@@ -24,7 +28,7 @@ const Location = () => {
         Dudok Rendezvényház és Étterem
         <span>2092 Budakeszi, Budakeszi Erdészet Kisérleti telep</span>
       </p>
-      {/* TODO: MAP */}
+      <Map />
       <Plant fluid={plant.childImageSharp.fluid} alt="" style={plantStyle} />
     </LocationWrapper>
   )
