@@ -19,7 +19,6 @@ const Location = () => {
       }
     }
   `)
-  console.log(process.env.GATSBY_MAPBOX_API_TOKEN)
 
   return (
     <LocationWrapper id="location">

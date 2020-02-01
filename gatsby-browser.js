@@ -4,4 +4,15 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+import React from 'react'
+import PropTypes from 'prop-types'
+
+import { ModalProvider } from './src/components/context/ModalContext'
+
+export const wrapRootElement = ({ element }) => (
+  <ModalProvider>{element}</ModalProvider>
+)
+
+wrapRootElement.propTypes = {
+  element: PropTypes.any.isRequired,
+}
