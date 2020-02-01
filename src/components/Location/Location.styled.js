@@ -18,3 +18,15 @@ export const LocationWrapper = styled(Wrapper)`
     }
   }
 `
+
+export const Plant = styled(Img)`
+  width: 400px;
+  transform: scaleX(-1) rotate(115deg);
+`
+
+export const plantStyle = {
+  position: 'absolute',
+  top: '-16rem',
+  right: '25rem',
+  margin: 'auto',
+}
