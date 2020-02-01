@@ -47,3 +47,26 @@ export const Timetable = styled.p`
     }
   }
 `
+
+export const Plant1 = styled(Img)`
+  width: 450px;
+`
+
+export const plant1Style = {
+  position: 'absolute',
+  bottom: '-15rem',
+  left: '-6rem',
+  margin: 'auto',
+}
+
+export const Plant2 = styled(Img)`
+  width: 700px;
+  transform: scaleX(-1) rotate(75deg);
+`
+
+export const plant2Style = {
+  position: 'absolute',
+  top: '-11rem',
+  right: '-30rem',
+  margin: 'auto',
+}

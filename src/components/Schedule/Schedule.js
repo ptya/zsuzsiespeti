@@ -2,14 +2,29 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 // local styles
-import { ScheduleWrapper, Line, Timetable } from './Schedule.styled'
+import {
+  ScheduleWrapper,
+  Line,
+  Timetable,
+  Plant1,
+  Plant2,
+  plant1Style,
+  plant2Style,
+} from './Schedule.styled'
 
 // TODO: background
 
 const Schedule = () => {
-  const { line } = useStaticQuery(graphql`
+  const { line, plant } = useStaticQuery(graphql`
     query {
       line: file(relativePath: { eq: "line-mid.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      plant: file(relativePath: { eq: "plant-bg-green.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -37,6 +52,8 @@ const Schedule = () => {
         <span>23:30 Menyecsketánc</span>
         <span>00:00 Éjféli menü</span>
       </Timetable>
+      <Plant1 fluid={plant.childImageSharp.fluid} alt="" style={plant1Style} />
+      <Plant2 fluid={plant.childImageSharp.fluid} alt="" style={plant2Style} />
     </ScheduleWrapper>
   )
 }
