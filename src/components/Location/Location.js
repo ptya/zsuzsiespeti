@@ -18,7 +18,7 @@ const Location = () => {
   `)
 
   return (
-    <LocationWrapper>
+    <LocationWrapper id="location">
       <h1>Helyszín</h1>
       <p>
         Dudok Rendezvényház és Étterem

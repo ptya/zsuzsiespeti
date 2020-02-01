@@ -34,7 +34,7 @@ const After = () => {
   `)
 
   return (
-    <AfterWrapper>
+    <AfterWrapper id="after">
       <h1>Buli után</h1>
       <h2>Sofőrszolgálat</h2>
       <Contacts>

@@ -38,7 +38,7 @@ const Gallery = () => {
     }
   `)
   return (
-    <GalleryWrapper>
+    <GalleryWrapper id="gallery">
       <Info>
         <h1>Galéria</h1>
         <p>Idővel itt fogod megtalálni a legjobb közös pillanatainkat.</p>

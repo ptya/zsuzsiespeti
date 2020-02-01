@@ -34,7 +34,7 @@ const Schedule = () => {
     }
   `)
   return (
-    <ScheduleWrapper>
+    <ScheduleWrapper id="schedule">
       <h1>Program</h1>
       <p>
         Terveink szerint így zajlik majd a délután és az este, de nem esünk
