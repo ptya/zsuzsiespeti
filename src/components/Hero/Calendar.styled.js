@@ -14,7 +14,7 @@ export const calendarImgStyle = {
   left: '8px',
 }
 
-export const Day = styled.p`
+export const Day = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,6 +22,7 @@ export const Day = styled.p`
   position: relative;
   width: 13rem;
   top: -1.5rem;
+  margin: 2rem 0;
 
   span {
     transform: rotate(2deg);
