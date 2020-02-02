@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-import { colors, device } from 'components/styles/variables'
-
 import {
   InputWrapper as MainInputWrapper,
   Error as MainError,
