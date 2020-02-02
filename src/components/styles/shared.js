@@ -31,6 +31,8 @@ export const Wrapper = styled.article`
   }
 `
 
+// TODO: hover
+
 export const Button = styled.button`
   width: 20rem;
   height: 6rem;

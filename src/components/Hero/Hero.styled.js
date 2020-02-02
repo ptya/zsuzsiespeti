@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components'
 import Img from 'gatsby-image'
 
-import { colors } from 'components/styles/variables'
 import { Wrapper, Button } from 'components/styles/shared'
 
 export const HeroWrapper = styled(Wrapper)`
@@ -31,7 +30,6 @@ export const Plant = styled(Img)`
   width: 400px;
 `
 
-// TODO: hover
 export const Rsvp = styled(Button)`
   position: absolute;
   bottom: -3rem;
