@@ -12,8 +12,6 @@ import {
   plant2Style,
 } from './Schedule.styled'
 
-// TODO: background
-
 const Schedule = () => {
   const { line, plant } = useStaticQuery(graphql`
     query {
