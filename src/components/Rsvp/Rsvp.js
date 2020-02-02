@@ -1,12 +1,13 @@
 import React, { useState, useContext, useRef } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { animated, useSpring} from 'react-spring'
+import { animated, useSpring } from 'react-spring'
 
 // context
 import ModalContext from 'components/context/ModalContext'
 
 // hooks
-import {useOnClickOutside} from 'components/hooks/useOnClickOutside'
+import { useOnClickOutside } from 'components/hooks/useOnClickOutside'
+import { useLockBodyScroll } from 'components/hooks/useLockBodyScroll'
 
 // local components
 import Form from './Form'
@@ -37,18 +38,19 @@ const Rsvp = () => {
   const { isSent, setModal } = useContext(ModalContext)
 
   const modal = useRef()
+
   useOnClickOutside(modal, () => setOff(true))
+  useLockBodyScroll()
 
   const fade = useSpring({
-    from: { opacity: 0,},
+    from: { opacity: 0 },
     opacity: off ? 0 : 1,
     onRest: () => {
       if (off) {
         setModal(false)
       }
-    }
-  }
-  )
+    },
+  })
 
   return (
     <AnimatedWrapper style={fade}>
@@ -61,9 +63,9 @@ const Rsvp = () => {
             style={plantStyle}
           />
         </Title>
-        {isSent && <Success setOff={setOff}/>}
-        {isError && <Fail setOff={setOff} /> }
-        {!isSent && !isError && (<Form setError={setError} />)}
+        {isSent && <Success setOff={setOff} />}
+        {isError && <Fail setOff={setOff} />}
+        {!isSent && !isError && <Form setError={setError} />}
       </Modal>
     </AnimatedWrapper>
   )

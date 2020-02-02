@@ -11,7 +11,6 @@ export const ModalWrapper = styled.div`
   left: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
   background: ${colors.darken};
   z-index: 2000;
 `
@@ -20,6 +19,7 @@ export const Modal = styled.main`
   position: relative;
   background: ${colors.modalBg};
   width: 60rem;
+  margin: 10rem auto auto;
   display: flex;
   justify-content: center;
   align-items: center;
