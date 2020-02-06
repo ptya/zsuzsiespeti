@@ -19,9 +19,12 @@ const Navigation = () => {
 
   const { isSent, setModal } = useContext(ModalContext)
 
+  console.log('scrolled', scrolled)
+
   useLayoutEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset < 0 ? 0 : window.pageYOffset
+      console.log('currentScrollPos', currentScrollPos)
       if (scrolled > currentScrollPos) {
         set(true)
       } else {
