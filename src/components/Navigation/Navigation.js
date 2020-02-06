@@ -21,7 +21,7 @@ const Navigation = () => {
 
   useLayoutEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset
+      const currentScrollPos = window.pageYOffset < 0 ? 0 : window.pageYOffset
       if (scrolled > currentScrollPos) {
         set(true)
       } else {
