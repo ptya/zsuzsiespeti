@@ -19,13 +19,13 @@ const Navigation = () => {
 
   const { isSent, setModal } = useContext(ModalContext)
 
-  console.log('scrolled', scrolled)
-
   useLayoutEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset < 0 ? 0 : window.pageYOffset
-      console.log('currentScrollPos', currentScrollPos)
-      if (scrolled > currentScrollPos) {
+      if (
+        scrolled > currentScrollPos ||
+        (currentScrollPos === 0 && on === false)
+      ) {
         set(true)
       } else {
         set(false)
@@ -34,7 +34,7 @@ const Navigation = () => {
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [scrolled])
+  }, [on, scrolled])
 
   return (
     <AnimatedNav style={animation}>
