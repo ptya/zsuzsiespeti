@@ -25,8 +25,13 @@ export const ScheduleWrapper = styled(Wrapper)`
 `
 
 export const Line = styled(Img)`
-  width: 35rem;
+  width: 22rem;
   margin: 1rem 0;
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    width: 35rem;
+  }
 `
 
 export const Timetable = styled.p`
