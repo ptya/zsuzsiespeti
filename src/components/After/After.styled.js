@@ -1,48 +1,77 @@
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-import { colors } from 'components/styles/variables'
+import { colors, device } from 'components/styles/variables'
 import { Wrapper } from 'components/styles/shared'
 
 import background from 'assets/images/after-bg-small.png'
 
 export const Plant1 = styled(Img)`
-  width: 600px;
+  width: 30rem;
+  top: -19rem;
+  left: -13rem;
   transform: rotate(90deg);
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    width: 60rem;
+    top: -37rem;
+    left: 20rem;
+  }
 `
 
 export const plant1Style = {
   position: 'absolute',
-  top: '-37rem',
-  left: '20rem',
   margin: 'auto',
 }
 
 export const Plant2 = styled(Img)`
-  width: 450px;
+  width: 25rem;
+  bottom: 0;
+  right: -19rem;
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    width: 45rem;
+    bottom: -13.5rem;
+    right: -11rem;
+  }
 `
 
 export const plant2Style = {
   position: 'absolute',
-  bottom: '-13.5rem',
-  right: '-11rem',
   margin: 'auto',
 }
 
 export const Contacts = styled.p`
-  margin: 1rem auto;
-  line-height: 3.5rem;
+  margin: 0 auto;
+  line-height: 2.5rem;
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    margin: 1rem auto;
+    line-height: 3.5rem;
+  }
 `
 
 export const Message = styled.p`
-  width: 47rem;
+  max-width: 27rem;
   margin: 1rem auto;
 
   a {
     font-family: 'DIN Next W1G', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     letter-spacing: 0.8px;
     color: ${colors.velvet};
+  }
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    max-width: 47rem;
+
+    a {
+      font-size: 1.6rem;
+    }
   }
 `
 
@@ -58,9 +87,9 @@ export const AfterWrapper = styled(Wrapper)`
   h2,
   ${Contacts} {
     font-family: 'Trajan Pro Regular', sans-serif;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     font-weight: 200;
-    letter-spacing: 1.425px;
+    letter-spacing: 1px;
   }
 
   h2 {
@@ -71,9 +100,25 @@ export const AfterWrapper = styled(Wrapper)`
   p {
     text-align: center;
   }
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    h2,
+    ${Contacts} {
+      font-family: 'Trajan Pro Regular', sans-serif;
+      font-size: 1.9rem;
+      font-weight: 200;
+      letter-spacing: 1.425px;
+    }
+  }
 `
 
 export const Line = styled(Img)`
-  width: 35rem;
+  width: 22rem;
   margin: 2rem 0;
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    width: 35rem;
+  }
 `
