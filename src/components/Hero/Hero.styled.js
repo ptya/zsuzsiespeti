@@ -8,7 +8,7 @@ import { device } from 'components/styles/variables'
 export const HeroWrapper = styled(Wrapper)`
   margin-top: 5.5rem;
   padding: 5rem 0 2.5rem;
-  overflow: unset;
+  overflow: initial;
 
   h1 {
     font-size: 2.8rem;

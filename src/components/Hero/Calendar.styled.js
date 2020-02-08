@@ -7,6 +7,9 @@ export const CalendarBack = styled(Img)`
   width: 10rem;
   position: absolute;
   left: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
@@ -27,8 +30,8 @@ export const Day = styled.div`
   align-items: center;
   position: relative;
   width: 13rem;
+  height: 10rem;
   top: -1.5rem;
-  margin: 2rem 0;
 
   span {
     transform: rotate(2deg);
@@ -49,6 +52,7 @@ export const Day = styled.div`
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
     width: 10rem;
+    height: 12rem;
 
     span:first-of-type {
       font-size: 6.35rem;
