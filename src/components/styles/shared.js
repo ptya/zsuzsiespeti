@@ -8,15 +8,15 @@ export const Wrapper = styled.article`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0;
+  padding: 2rem 0;
   width: 100%;
   overflow: hidden;
 
   h1 {
-    font-size: 2.8rem;
+    font-size: 2rem;
     color: ${colors.velvet};
     text-transform: uppercase;
-    letter-spacing: 2.45px;
+    letter-spacing: 2px;
   }
 
   h2 {
@@ -32,6 +32,8 @@ export const Wrapper = styled.article`
 
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
+    padding: 5rem 0;
+
     h1 {
       font-size: 4.6rem;
       letter-spacing: 3.45px;

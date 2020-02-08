@@ -11,6 +11,8 @@ export const HeroWrapper = styled(Wrapper)`
   overflow: unset;
 
   h1 {
+    font-size: 2.8rem;
+    letter-spacing: 2.45px;
     margin: 1.2rem auto 0.8rem;
   }
 
@@ -27,6 +29,11 @@ export const HeroWrapper = styled(Wrapper)`
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
     padding: 5rem 0 3.5rem;
+
+    h1 {
+      font-size: 4.6rem;
+      letter-spacing: 3.45px;
+    }
 
     h2 {
       margin-top: 0.83em;

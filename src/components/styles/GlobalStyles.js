@@ -7,7 +7,7 @@ import TrajanProRegular from 'assets/fonts/TrajanPro-Regular.otf'
 import TrajanProBold from 'assets/fonts/TrajanPro-Bold.otf'
 import background from 'assets/images/bg.jpg'
 
-import { colors } from './variables'
+import { colors, device } from './variables'
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -67,12 +67,19 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     font-family: 'DIN Next W1G', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     letter-spacing: 0.8px;
   }
 
   * {
   box-sizing: border-box;
+  }
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    p {
+      font-size: 1.6rem;
+    }
   }
 `
 
