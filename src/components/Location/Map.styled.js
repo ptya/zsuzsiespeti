@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import { colors, device } from 'components/styles/variables'
 
 export const MapWrapper = styled.div`
-  width: 80rem;
-  height: 40rem;
+  width: 30rem;
+  height: 20rem;
   border: 3px solid ${colors.lightBg};
   cursor: pointer;
 
@@ -16,8 +16,10 @@ export const MapWrapper = styled.div`
     }
   }
 
-  @media screen and (${device.tablet}) {
+  @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
+    width: 80rem;
+    height: 40rem;
   }
 `
 

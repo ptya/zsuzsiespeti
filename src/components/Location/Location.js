@@ -27,8 +27,8 @@ const Location = () => {
         Dudok Rendezvényház és Étterem
         <span>2092 Budakeszi, Budakeszi Erdészet Kisérleti telep</span>
       </p>
-      <Map />
       <Plant fluid={plant.childImageSharp.fluid} alt="" style={plantStyle} />
+      <Map />
     </LocationWrapper>
   )
 }
