@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-import { colors } from 'components/styles/variables'
+import { colors, device } from 'components/styles/variables'
+import { MenuBtn } from './Burger.styled'
 
 // TODO: hover on links
 
-const Nav = styled.nav`
+export const Nav = styled.nav`
   height: 55px;
-  background: ${colors.black};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,12 +18,12 @@ const Nav = styled.nav`
   a,
   button {
     color: ${colors.menu};
-    margin: auto 1rem;
+    margin: 1.5rem auto;
     width: 16rem;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     letter-spacing: 0.12rem;
   }
 
@@ -33,14 +33,49 @@ const Nav = styled.nav`
     cursor: pointer;
     font-family: 'Trajan Pro Regular', sans-serif;
   }
+
+  ${MenuBtn} {
+    width: 3.6rem;
+  }
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    background: ${colors.black};
+    a,
+    button {
+      margin: auto 1rem;
+      width: 16rem;
+      font-size: 1.2rem;
+    }
+  }
 `
 
-const Divider = styled.div`
-  width: 1px;
-  height: 2rem;
+export const MenuWrapper = styled.div`
+  background: ${colors.black};
+  width: 20rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5.5rem;
+  transform: ${props =>
+    props.open ? `translateX(0rem)` : `translateX(20rem)`};
+  transition: transform 0.3s ease-in-out;
+`
+
+export const Divider = styled.div`
+  width: 17rem;
+  height: 1px;
   background: ${colors.menu};
-  margin: auto 1rem;
   opacity: 0.5;
-`
 
-export { Nav, Divider }
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    width: 1px;
+    height: 2rem;
+    margin: auto 1rem;
+  }
+`
