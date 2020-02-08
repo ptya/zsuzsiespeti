@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-import { colors } from 'components/styles/variables'
+import { colors, device } from 'components/styles/variables'
 
 export const ModalWrapper = styled.div`
   width: 100%;
@@ -18,11 +18,17 @@ export const ModalWrapper = styled.div`
 export const Modal = styled.main`
   position: relative;
   background: ${colors.modalBg};
-  width: 60rem;
-  margin: 10rem auto auto;
+  width: 31rem;
+  margin: auto auto;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    width: 60rem;
+    margin: 10rem auto auto;
+  }
 `
 
 export const Title = styled.div`
@@ -30,18 +36,27 @@ export const Title = styled.div`
   width: 100%;
   top: 0;
   overflow: hidden;
-  height: 9rem;
+  height: 6rem;
   display: flex;
   align-items: center;
   background: ${colors.velvet};
 
   h1 {
     margin: auto 3rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: ${colors.modalTitle};
     text-transform: uppercase;
     letter-spacing: 1.875px;
     z-index: 1;
+  }
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    height: 9rem;
+
+    h1 {
+      font-size: 2.5rem;
+    }
   }
 `
 
