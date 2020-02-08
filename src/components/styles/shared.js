@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { colors } from 'components/styles/variables'
+import { colors, device } from 'components/styles/variables'
 
 export const Wrapper = styled.article`
   position: relative;
@@ -13,21 +13,38 @@ export const Wrapper = styled.article`
   overflow: hidden;
 
   h1 {
-    font-size: 46px;
+    font-size: 2.8rem;
     color: ${colors.velvet};
     text-transform: uppercase;
-    letter-spacing: 3.45px;
+    letter-spacing: 2.45px;
   }
 
   h2 {
     font-family: 'Trajan Pro Bold', sans-serif;
-    font-size: 25px;
-    letter-spacing: 5px;
+    font-size: 2rem;
+    letter-spacing: 3px;
   }
 
   h3 {
-    font-size: 20px;
-    letter-spacing: 1.5px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    h1 {
+      font-size: 4.6rem;
+      letter-spacing: 3.45px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      letter-spacing: 5px;
+    }
+    h3 {
+      font-size: 2rem;
+      letter-spacing: 1.5px;
+    }
   }
 `
 

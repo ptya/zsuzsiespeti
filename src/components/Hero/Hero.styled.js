@@ -3,9 +3,11 @@ import Img from 'gatsby-image'
 
 import { Wrapper, Button } from 'components/styles/shared'
 
+import { device } from 'components/styles/variables'
+
 export const HeroWrapper = styled(Wrapper)`
   margin-top: 5.5rem;
-  padding: 5rem 0 3.5rem;
+  padding: 5rem 0 2.5rem;
   overflow: unset;
 
   h1 {
@@ -13,6 +15,7 @@ export const HeroWrapper = styled(Wrapper)`
   }
 
   h2 {
+    margin-top: 2.5rem;
     margin-bottom: 0;
   }
 
@@ -20,14 +23,33 @@ export const HeroWrapper = styled(Wrapper)`
     text-align: center;
     margin-bottom: 0;
   }
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    padding: 5rem 0 3.5rem;
+
+    h2 {
+      margin-top: 0.83em;
+    }
+  }
 `
 
 export const Line = styled(Img)`
-  width: 500px;
+  width: 32rem;
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    width: 50rem;
+  }
 `
 
 export const Plant = styled(Img)`
-  width: 400px;
+  width: 28rem;
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    width: 40rem;
+  }
 `
 
 export const Rsvp = styled(Button)`
