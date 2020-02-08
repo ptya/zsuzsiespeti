@@ -5,15 +5,16 @@ import { colors, device } from 'components/styles/variables'
 export const MenuBtn = styled.button`
   background: initial;
   position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   right: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border: 0;
-  margin: 0;
   padding: 0.6rem 0;
   width: 3.6rem;
-  text-indent: -99rem;
   height: ${props => (props.open ? '3.6rem' : '3.5rem')};
   cursor: pointer;
   z-index: 9999;
@@ -49,11 +50,13 @@ export const MenuBtn = styled.button`
     margin: 0;
     padding: 0;
     position: absolute;
+    right: -101%;
   }
 
-  @media screen and (${device.tablet}) {
+  @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
     height: 4.9rem;
+    right: -101%;
 
     & > div {
       height: 0.5rem;

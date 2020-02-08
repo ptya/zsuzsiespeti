@@ -7,13 +7,33 @@ import { MenuBtn } from './Burger.styled'
 
 export const Nav = styled.nav`
   height: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
+
+  ${MenuBtn} {
+    width: 3.6rem;
+  }
+`
+
+export const MenuWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: ${colors.black};
+  width: 20rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5.5rem;
+  transform: ${props =>
+    props.open ? `translateX(0rem)` : `translateX(20rem)`};
+  transition: transform 0.3s ease-in-out;
 
   a,
   button {
@@ -34,13 +54,16 @@ export const Nav = styled.nav`
     font-family: 'Trajan Pro Regular', sans-serif;
   }
 
-  ${MenuBtn} {
-    width: 3.6rem;
-  }
-
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
     background: ${colors.black};
+    transform: initial;
+    width: 100%;
+    flex-direction: row;
+    padding-top: 0;
+    position: relative;
+    height: 100%;
+
     a,
     button {
       margin: auto 1rem;
@@ -48,22 +71,6 @@ export const Nav = styled.nav`
       font-size: 1.2rem;
     }
   }
-`
-
-export const MenuWrapper = styled.div`
-  background: ${colors.black};
-  width: 20rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 5.5rem;
-  transform: ${props =>
-    props.open ? `translateX(0rem)` : `translateX(20rem)`};
-  transition: transform 0.3s ease-in-out;
 `
 
 export const Divider = styled.div`

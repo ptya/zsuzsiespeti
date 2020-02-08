@@ -50,75 +50,44 @@ const Navigation = () => {
   }, [isSmallScreen, on, scrolled])
 
   return (
-    <>
-      {/* *********** */}
-      {/* MOBILE VIEW */}
-      {/* *********** */}
-      {isSmallScreen && (
-        <Nav>
-          <Burger open={isOpen} setOpen={setOpen} />
-          <MenuWrapper open={isOpen}>
-            {!isSent && (
-              <>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setOpen(false)
-                    setModal(true)
-                  }}
-                >
-                  Visszajelzés
-                </button>
-                <Divider />
-              </>
-            )}
-            <a href="#schedule" onClick={() => setOpen(false)}>
-              Programok
-            </a>
+    <AnimatedNav style={animation}>
+      <Burger open={isOpen} setOpen={setOpen} />
+      <MenuWrapper open={isOpen}>
+        {!isSent && (
+          <>
+            <button
+              type="button"
+              onClick={() => {
+                setOpen(false)
+                setModal(true)
+              }}
+            >
+              Visszajelzés
+            </button>
             <Divider />
-            <a href="#menu" onClick={() => setOpen(false)}>
-              Menü
-            </a>
-            <Divider />
-            <a href="#location" onClick={() => setOpen(false)}>
-              Helyszín
-            </a>
-            <Divider />
-            <a href="#after" onClick={() => setOpen(false)}>
-              Buli után
-            </a>
-            <Divider />
-            <a href="#gallery" onClick={() => setOpen(false)}>
-              Galéria
-            </a>
-          </MenuWrapper>
-        </Nav>
-      )}
-      {/* ************ */}
-      {/* DESKTOP VIEW */}
-      {/* ************ */}
-      {!isSmallScreen && (
-        <AnimatedNav style={animation}>
-          {!isSent && (
-            <>
-              <button type="button" onClick={() => setModal(true)}>
-                Visszajelzés
-              </button>
-              <Divider />
-            </>
-          )}
-          <a href="#schedule">Programok</a>
-          <Divider />
-          <a href="#menu">Menü</a>
-          <Divider />
-          <a href="#location">Helyszín</a>
-          <Divider />
-          <a href="#after">Buli után</a>
-          <Divider />
-          <a href="#gallery">Galéria</a>
-        </AnimatedNav>
-      )}
-    </>
+          </>
+        )}
+        <a href="#schedule" onClick={() => isOpen && setOpen(false)}>
+          Programok
+        </a>
+        <Divider />
+        <a href="#menu" onClick={() => isOpen && setOpen(false)}>
+          Menü
+        </a>
+        <Divider />
+        <a href="#location" onClick={() => isOpen && setOpen(false)}>
+          Helyszín
+        </a>
+        <Divider />
+        <a href="#after" onClick={() => isOpen && setOpen(false)}>
+          Buli után
+        </a>
+        <Divider />
+        <a href="#gallery" onClick={() => isOpen && setOpen(false)}>
+          Galéria
+        </a>
+      </MenuWrapper>
+    </AnimatedNav>
   )
 }
 export default Navigation
