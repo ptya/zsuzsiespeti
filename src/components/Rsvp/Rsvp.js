@@ -13,6 +13,7 @@ import { useLockBodyScroll } from 'components/hooks/useLockBodyScroll'
 import Form from './Form'
 import Success from './Success'
 import Fail from './Fail'
+import CloseBtn from './CloseBtn'
 
 // local styles
 import { ModalWrapper, Modal, Title, Plant, plantStyle } from './Rsvp.styled'
@@ -57,6 +58,7 @@ const Rsvp = () => {
       <Modal ref={modal}>
         <Title>
           <h1>Visszajelzés</h1>
+          <CloseBtn setOff={setOff} />
           <Plant
             fluid={plant.childImageSharp.fluid}
             alt=""

@@ -7,7 +7,7 @@ const Burger = ({ open, setOpen }) => (
     <div />
     <div />
     <div />
-    <span>{`${open ? 'Close' : 'Show'} Menu`}</span>
+    <span>Menü</span>
   </MenuBtn>
 )
 
