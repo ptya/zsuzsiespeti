@@ -5,11 +5,11 @@ import { useMediaQuery } from 'react-responsive'
 // context
 import ModalContext from 'components/context/ModalContext'
 
-// local components
-import { device } from 'components/styles/variables'
-import Burger from './Burger'
-
 // shared styles
+import { device } from 'components/styles/variables'
+
+// local components
+import Burger from './Burger'
 
 // local styles
 import { Nav, Divider, MenuWrapper } from './Navigation.styled'
