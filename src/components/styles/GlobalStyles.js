@@ -66,13 +66,14 @@ const GlobalStyle = createGlobalStyle`
     color: ${colors.velvet};
     transition: color 0.2s ease-in-out;
 
+    :visited {
+      color: ${colors.velvet};
+    }
+
     :hover {
       color: ${colors.red};
     }
 
-    :visited {
-      color: ${colors.velvet};
-    }
   }
 
   p {

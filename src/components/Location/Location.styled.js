@@ -12,19 +12,23 @@ export const LocationWrapper = styled(Wrapper)`
   p {
     text-align: center;
     max-width: 27rem;
+  }
 
-    a {
-      font-size: 1.2rem;
-      font-weight: bold;
-      display: block;
-      font-family: 'DIN Next W1G', sans-serif;
-    }
+  a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    font-family: 'DIN Next W1G', sans-serif;
   }
 
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
     p {
       max-width: unset;
+    }
+
+    a {
+      font-size: 1.6rem;
     }
   }
 `
