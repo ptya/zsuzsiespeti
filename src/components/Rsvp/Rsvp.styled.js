@@ -13,6 +13,7 @@ export const ModalWrapper = styled.div`
   justify-content: center;
   background: ${colors.darken};
   z-index: 2000;
+  overflow: auto;
 `
 
 export const Modal = styled.main`
@@ -23,11 +24,11 @@ export const Modal = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 3000;
 
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
     width: 60rem;
-    margin: 10rem auto auto;
   }
 `
 
