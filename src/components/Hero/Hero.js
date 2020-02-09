@@ -62,6 +62,9 @@ const Hero = () => {
       >
         <input type="hidden" name="form-name" value="rsvp" />
         <input type="hidden" name="bot-field" />
+        <input type="text" name="name" />
+        <input type="text" name="count" />
+        <input type="text" name="note" />
       </HiddenForm>
     </HeroWrapper>
   )
