@@ -12,13 +12,13 @@ export const StyledForm = styled(Form)`
   margin-top: 4rem;
   padding: 2rem 1rem;
 
-  @media screen and (${device.tablet}) {
+  @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
     margin-top: 9rem;
     width: 42rem;
   }
 
-  @media screen and (${device.laptop}) {
+  @media ${device.laptop} {
     /* -> @media (min-width: 1024px)" */
   }
 `
@@ -61,7 +61,7 @@ export const InputWrapper = styled.div`
     width: 7rem;
   }
 
-  @media screen and (${device.tablet}) {
+  @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
     label {
       font-size: 1.95rem;
@@ -82,7 +82,7 @@ export const InputWrapper = styled.div`
     }
   }
 
-  @media screen and (${device.laptop}) {
+  @media ${device.laptop} {
     /* -> @media (min-width: 1024px)" */
     input,
     textarea {
@@ -110,7 +110,7 @@ export const Submit = styled(Button)`
   align-self: center;
   margin: 0rem auto;
 
-  @media screen and (${device.tablet}) {
+  @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
     margin: 4rem auto;
   }
