@@ -25,7 +25,13 @@ const Location = () => {
       <h1>Helyszín</h1>
       <p>
         Dudok Rendezvényház és Étterem
-        <span>2092 Budakeszi, Budakeszi Erdészet Kisérleti telep</span>
+        <a
+          href="https://goo.gl/maps/pAVfTVGgwsf3GtrD7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          2092 Budakeszi, Budakeszi Erdészet Kisérleti telep
+        </a>
       </p>
       <Plant fluid={plant.childImageSharp.fluid} alt="" style={plantStyle} />
       <Map />

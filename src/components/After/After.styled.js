@@ -11,6 +11,7 @@ export const Plant1 = styled(Img)`
   top: -19rem;
   left: -13rem;
   transform: rotate(90deg);
+  z-index: -1;
 
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
@@ -29,6 +30,7 @@ export const Plant2 = styled(Img)`
   width: 25rem;
   bottom: 0;
   right: -19rem;
+  z-index: -1;
 
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
@@ -63,6 +65,11 @@ export const Message = styled.p`
     font-size: 1.2rem;
     letter-spacing: 0.8px;
     color: ${colors.velvet};
+    transition: color 0.2s ease-in-out;
+
+    :hover {
+      color: ${colors.red};
+    }
   }
 
   @media ${device.tablet} {

@@ -8,6 +8,7 @@ export const colors = {
   black: '#382d20',
   grey: '#333',
   green: '#344117',
+  lightGreen: '#4c6021',
   lightBg: '#c6bba6',
   menu: '#867b67',
   modalBg: '#bfb49f',

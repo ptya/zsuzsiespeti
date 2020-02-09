@@ -63,10 +63,4 @@ export const Rsvp = styled(Button)`
   position: absolute;
   bottom: -3rem;
   z-index: 100;
-
-  ${props =>
-    props.disabled &&
-    css`
-      cursor: default;
-    `}
 `

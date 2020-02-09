@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-import { device } from 'components/styles/variables'
+import { device, colors } from 'components/styles/variables'
 import { Wrapper } from 'components/styles/shared'
 
 export const LocationWrapper = styled(Wrapper)`
@@ -13,9 +13,16 @@ export const LocationWrapper = styled(Wrapper)`
     text-align: center;
     max-width: 27rem;
 
-    span {
+    a {
       font-weight: bold;
       display: block;
+      font-family: 'DIN Next W1G', sans-serif;
+      color: ${colors.velvet};
+      transition: color 0.2s ease-in-out;
+
+      :hover {
+        color: ${colors.red};
+      }
     }
   }
 
@@ -32,6 +39,7 @@ export const Plant = styled(Img)`
   top: -6rem;
   right: -4.5rem;
   transform: scaleX(-1) rotate(115deg);
+  z-index: -1;
 
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */

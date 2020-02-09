@@ -3,8 +3,6 @@ import styled from 'styled-components'
 import { colors, device } from 'components/styles/variables'
 import { MenuBtn } from './Burger.styled'
 
-// TODO: hover on links
-
 export const Nav = styled.nav`
   height: 55px;
   position: fixed;
@@ -45,6 +43,11 @@ export const MenuWrapper = styled.div`
     text-decoration: none;
     font-size: 1.6rem;
     letter-spacing: 0.12rem;
+    transition: color 0.2s ease-in-out;
+
+    :hover {
+      color: ${colors.menuBg};
+    }
   }
 
   button {

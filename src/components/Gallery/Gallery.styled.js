@@ -36,6 +36,7 @@ export const Plant = styled(Img)`
   top: 4rem;
   left: 0;
   right: 0;
+  z-index: -1;
 
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */

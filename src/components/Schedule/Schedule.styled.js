@@ -82,6 +82,7 @@ export const Plant1 = styled(Img)`
   width: 10rem;
   left: -3.5rem;
   bottom: -1.5rem;
+  z-index: -1;
 
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
@@ -101,6 +102,7 @@ export const Plant2 = styled(Img)`
   transform: scaleX(-1) rotate(75deg);
   top: -4rem;
   right: -11rem;
+  z-index: -1;
 
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */

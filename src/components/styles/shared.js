@@ -11,6 +11,7 @@ export const Wrapper = styled.article`
   padding: 2rem 0;
   width: 100%;
   overflow: hidden;
+  z-index: 1;
 
   h1 {
     font-size: 2rem;
@@ -50,8 +51,6 @@ export const Wrapper = styled.article`
   }
 `
 
-// TODO: hover
-
 export const Button = styled.button`
   width: 20rem;
   height: 6rem;
@@ -63,4 +62,18 @@ export const Button = styled.button`
   background: ${colors.green};
   color: ${colors.lightBg};
   cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  :disabled {
+    cursor: default;
+  }
+
+  :hover,
+  :focus {
+    background: ${colors.lightGreen};
+  }
+
+  :active {
+    transform: translateY(1px);
+  }
 `
