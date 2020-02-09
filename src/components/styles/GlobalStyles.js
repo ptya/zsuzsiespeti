@@ -63,6 +63,16 @@ const GlobalStyle = createGlobalStyle`
   a {
     font-family: "Trajan Pro Regular",  sans-serif;
     font-size: 1.6rem;
+    color: ${colors.velvet};
+    transition: color 0.2s ease-in-out;
+
+    :hover {
+      color: ${colors.red};
+    }
+
+    :visited {
+      color: ${colors.velvet};
+    }
   }
 
   p {

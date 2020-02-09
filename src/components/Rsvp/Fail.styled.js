@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 
-import { colors } from 'components/styles/variables'
+import { colors, device } from 'components/styles/variables'
 import { Button } from 'components/styles/shared'
 
 const scaleAnimation = keyframes`
@@ -88,17 +88,27 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 45rem;
+  width: 28rem;
 
   p {
     margin: 1rem;
-    width: 35rem;
+    width: 19rem;
   }
   a {
     font-family: 'DIN Next W1G', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     letter-spacing: 0.8px;
-    color: ${colors.velvet};
+  }
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    width: 45rem;
+    p {
+      width: 35rem;
+    }
+    a {
+      font-size: 1.6rem;
+    }
   }
 `
 

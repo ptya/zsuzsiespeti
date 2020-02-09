@@ -74,12 +74,6 @@ export const Message = styled.p`
     font-family: 'DIN Next W1G', sans-serif;
     font-size: 1.2rem;
     letter-spacing: 0.8px;
-    color: ${colors.velvet};
-    transition: color 0.2s ease-in-out;
-
-    :hover {
-      color: ${colors.red};
-    }
   }
 
   @media ${device.tablet} {
