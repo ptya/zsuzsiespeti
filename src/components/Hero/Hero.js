@@ -8,7 +8,7 @@ import ModalContext from '../context/ModalContext'
 import Calendar from './Calendar'
 
 // local styles
-import { HeroWrapper, Line, Plant, Rsvp } from './Hero.styled'
+import { HeroWrapper, Line, Plant, Rsvp, HiddenForm } from './Hero.styled'
 
 const Hero = () => {
   const { lineTop, lineBottom, plant } = useStaticQuery(graphql`
@@ -54,6 +54,15 @@ const Hero = () => {
       <Rsvp onClick={() => setModal(true)} disabled={isSent}>
         {isSent ? 'Köszönjük' : 'Visszajelzés'}
       </Rsvp>
+      <HiddenForm
+        name="rsvp"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+        method="post"
+      >
+        <input type="hidden" name="form-name" value="rsvp" />
+        <input type="hidden" name="bot-field" />
+      </HiddenForm>
     </HeroWrapper>
   )
 }

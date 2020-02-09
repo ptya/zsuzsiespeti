@@ -64,3 +64,7 @@ export const Rsvp = styled(Button)`
   bottom: -3rem;
   z-index: 100;
 `
+
+export const HiddenForm = styled.form`
+  display: none;
+`
