@@ -45,6 +45,11 @@ export const Plant = styled(Img)`
     /* -> @media (min-width: 768px)" */
     width: 40rem;
     top: -16rem;
+    right: -11rem;
+  }
+
+  @media ${device.laptop} {
+    /* -> @media (min-width: 1024px)" */
     right: 25rem;
   }
 `

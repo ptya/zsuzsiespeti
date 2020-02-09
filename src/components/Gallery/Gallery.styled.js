@@ -62,8 +62,8 @@ export const GalleryWrapper = styled(Wrapper)`
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 1fr;
 
-  @media ${device.tablet} {
-    /* -> @media (min-width: 768px)" */
+  @media ${device.laptop} {
+    /* -> @media (min-width: 1024px)" */
     grid-template-columns: 33rem 45rem;
     grid-gap: 10rem;
   }
@@ -76,7 +76,12 @@ export const Info = styled.div`
   padding-left: 2.5rem;
 
   @media ${device.tablet} {
-    /* -> @media (min-width: 768px)" */
+    /* -> @media (min-width: 1024px)" */
+    padding-left: 5rem;
+  }
+
+  @media ${device.laptop} {
+    /* -> @media (min-width: 1024px)" */
     padding-left: 0;
 
     p {

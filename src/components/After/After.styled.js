@@ -17,6 +17,11 @@ export const Plant1 = styled(Img)`
     /* -> @media (min-width: 768px)" */
     width: 60rem;
     top: -37rem;
+    left: -19rem;
+  }
+
+  @media ${device.laptop} {
+    /* -> @media (min-width: 1024px)" */
     left: 20rem;
   }
 `
@@ -36,6 +41,11 @@ export const Plant2 = styled(Img)`
     /* -> @media (min-width: 768px)" */
     width: 45rem;
     bottom: -13.5rem;
+    right: -26rem;
+  }
+
+  @media ${device.laptop} {
+    /* -> @media (min-width: 1024px)" */
     right: -11rem;
   }
 `

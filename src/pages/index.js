@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => {
   const { isModal } = useContext(ModalContext)
   return (
     <Layout>
-      <SEO title="Hamarosan" />
+      <SEO />
       <Navigation />
       <Hero />
       <Us data={data} />

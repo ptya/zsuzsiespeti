@@ -76,8 +76,8 @@ const Form = ({ setError }) => {
           <Field name="count" label="Hányan jöttök?" component={Select} />
           <Field name="note" label="Megjegyzés:" component={Textarea} />
           <Info>
-            ide kellene mindenféle ételallergia, gyerek etető szék, vagy bármi
-            fontos infó. egy hosszabb label, vagy egy információs mondat
+            Kérlek ide írjatok minden számunkra fontos információt, pl.
+            ételallergia, etető szék, vagy bármi más 😊
           </Info>
           <Submit type="submit" disabled={isSubmitting || !isValid}>
             Elküldöm

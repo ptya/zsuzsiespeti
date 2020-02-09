@@ -44,7 +44,7 @@ const Schedule = () => {
         <span>16:00 Vendégvárás</span>
         <span>17:00 Szertartás</span>
         <span>17:30 Fotózkodás</span>
-        <span>18:00 Vacsora</span>
+        <span>18:30 Vacsora</span>
         <span>20:30 Nyitótánc</span>
         <span>22:00 Torta</span>
         <span>23:30 Menyecsketánc</span>

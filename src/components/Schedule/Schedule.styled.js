@@ -86,7 +86,14 @@ export const Plant1 = styled(Img)`
 
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
-    width: 450px;
+    width: 30rem;
+    bottom: -3rem;
+    left: -6rem;
+  }
+
+  @media ${device.laptop} {
+    /* -> @media (min-width: 1024px)" */
+    width: 45rem;
     bottom: -15rem;
     left: -6rem;
   }
@@ -106,6 +113,13 @@ export const Plant2 = styled(Img)`
 
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
+    width: 37rem;
+    top: -8rem;
+    right: -20rem;
+  }
+
+  @media ${device.laptop} {
+    /* -> @media (min-width: 1024px)" */
     width: 70rem;
     top: -11rem;
     right: -30rem;

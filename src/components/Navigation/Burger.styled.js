@@ -50,22 +50,29 @@ export const MenuBtn = styled.button`
     margin: 0;
     padding: 0;
     position: absolute;
-    right: -101%;
+    right: -9999rem;
+  }
+
+  @media ${device.mobileM} {
+    /* -> @media (min-width: 375px)" */
+    right: 2rem;
   }
 
   @media ${device.tablet} {
-    /* -> @media (min-width: 768px)" */
-    height: 4.9rem;
-    right: -101%;
+    /* -> @media (min-width: 768)" */
+    top: 4rem;
+    right: 4rem;
+    width: 4rem;
+    height: ${props => (props.open ? '3.9rem' : '4rem')};
 
     & > div {
-      height: 0.5rem;
-      width: 4.4rem;
+      height: 0.4rem;
+      width: ${props => (props.open ? '3.3rem' : '4rem')};
     }
+  }
 
-    div:nth-child(2) {
-      transform: ${props =>
-        props.open ? 'translateX(5.5rem)' : 'translateX(0)'};
-    }
+  @media ${device.laptop} {
+    /* -> @media (min-width: 1024px)" */
+    display: none;
   }
 `

@@ -66,6 +66,10 @@ export const Button = styled.button`
 
   :disabled {
     cursor: default;
+    :hover,
+    :focus {
+      background: ${colors.green};
+    }
   }
 
   :hover,

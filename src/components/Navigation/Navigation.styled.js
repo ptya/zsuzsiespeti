@@ -36,7 +36,8 @@ export const MenuWrapper = styled.div`
   a,
   button {
     color: ${colors.menu};
-    margin: 1.5rem auto;
+    margin: auto;
+    padding: 1.5rem 0;
     width: 16rem;
     text-align: center;
     text-transform: uppercase;
@@ -58,7 +59,20 @@ export const MenuWrapper = styled.div`
   }
 
   @media ${device.tablet} {
-    /* -> @media (min-width: 768px)" */
+    /* -> @media (min-width: 768)" */
+    padding-top: 7.5rem;
+    width: 30rem;
+    transform: ${props =>
+      props.open ? `translateX(0rem)` : `translateX(30rem)`};
+
+    a,
+    button {
+      padding: 2rem 0;
+    }
+  }
+
+  @media ${device.laptop} {
+    /* -> @media (min-width: 1024px)" */
     background: ${colors.black};
     transform: initial;
     width: 100%;
@@ -82,8 +96,8 @@ export const Divider = styled.div`
   background: ${colors.menu};
   opacity: 0.5;
 
-  @media ${device.tablet} {
-    /* -> @media (min-width: 768px)" */
+  @media ${device.laptop} {
+    /* -> @media (min-width: 1024px)" */
     width: 1px;
     height: 2rem;
     margin: auto 1rem;

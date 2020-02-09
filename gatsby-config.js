@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
   siteMetadata: {
-    title: 'Zsuzsi & Peti',
+    title: 'Zsuzsi & Peti egybekel',
     description: 'Minden, amit tudni lehet Zsuzsi & Peti esküvőjéről :)',
     url: 'https://zsuzsiespetiegybekel.hu',
     image: '/images/share_new.jpg',
@@ -19,8 +19,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#382d20`,
+        theme_color: `#382d20`,
         display: `minimal-ui`,
         icon: `src/assets/images/favico.png`, // This path is relative to the root of the site.
       },

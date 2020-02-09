@@ -18,6 +18,12 @@ export const MapWrapper = styled.div`
 
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
+    width: 70rem;
+    height: 40rem;
+  }
+
+  @media ${device.laptop} {
+    /* -> @media (min-width: 1024px)" */
     width: 80rem;
     height: 40rem;
   }
