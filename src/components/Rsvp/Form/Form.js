@@ -65,7 +65,7 @@ const Form = ({ setError }) => {
     >
       {({ isSubmitting, isValid }) => (
         <StyledForm
-          name="contact"
+          name="rsvp"
           netlify-honeypot="bot-field"
           data-netlify="true"
           method="post"
