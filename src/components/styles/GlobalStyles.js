@@ -44,6 +44,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 10px;
     font-family: "DIN Next W1G",  sans-serif;
     color: ${colors.black};
+    scroll-behavior: smooth;
   }
 
   body {
