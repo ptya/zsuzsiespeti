@@ -19,6 +19,16 @@ export const HeroWrapper = styled(Wrapper)`
   h2 {
     margin-top: 2.5rem;
     margin-bottom: 0;
+    position: relative;
+    :after {
+      border-bottom: 0.5rem solid #7a2b2d;
+      border-radius: 0.5rem;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      bottom: 50%;
+    }
   }
 
   h3 {
@@ -68,3 +78,27 @@ export const Rsvp = styled(Button)`
 export const HiddenForm = styled.form`
   display: none;
 `
+
+export const NewDate = styled(Img)`
+  transform: rotate(22deg);
+  width: 13rem;
+  right: calc(50vw - 14rem);
+  top: -2rem;
+
+  @media ${device.mobileM} {
+    /* -> @media (min-width: 375px)" */
+    right: calc(50vw - 17.5rem);
+    top: 10rem;
+  }
+
+  @media ${device.tablet} {
+    /* -> @media (min-width: 768px)" */
+    right: calc(50vw - 35rem);
+    top: 12rem;
+    width: 23rem;
+  }
+`
+
+export const newDateImgStyle = {
+  position: 'absolute',
+}
