@@ -14,11 +14,21 @@ export const MenuWrapper = styled(Wrapper)`
   h2 {
     margin-bottom: 0;
   }
+  h3 {
+    margin-bottom: 4px;
+  }
 
   p {
     text-align: center;
     font-size: 1.2rem;
     letter-spacing: 0.9px;
+    margin: 0;
+  }
+
+  br {
+    content: '';
+    display: block;
+    margin: 1.5rem;
   }
 
   @media ${device.tablet} {
