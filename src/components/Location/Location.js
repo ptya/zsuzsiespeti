@@ -33,6 +33,7 @@ const Location = () => {
           2092 Budakeszi, Budakeszi Erdészet Kisérleti telep
         </a>
       </p>
+      <p>Egy sorompós leágazást keress a Telki útról.</p>
       <Plant fluid={plant.childImageSharp.fluid} alt="" style={plantStyle} />
       <Map />
     </LocationWrapper>

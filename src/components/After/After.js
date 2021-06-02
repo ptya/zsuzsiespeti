@@ -38,6 +38,7 @@ const After = () => {
       <h2>Buli után</h2>
       <h3>Sofőrszolgálat</h3>
       <Contacts>
+        Omega: +36 30 895 6979 <br />
         GPR: +36 30 473 9379 <br />
         Speedboy: +36 70 344 0484 <br />
         Éjjeli Őrangyal: +36 20 988 8987
