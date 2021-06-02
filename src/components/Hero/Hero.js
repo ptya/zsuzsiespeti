@@ -8,18 +8,10 @@ import ModalContext from '../context/ModalContext'
 import Calendar from './Calendar'
 
 // local styles
-import {
-  HeroWrapper,
-  Line,
-  Plant,
-  Rsvp,
-  HiddenForm,
-  NewDate,
-  newDateImgStyle,
-} from './Hero.styled'
+import { HeroWrapper, Line, Plant, Rsvp, HiddenForm } from './Hero.styled'
 
 const Hero = () => {
-  const { lineTop, lineBottom, plant, newDate } = useStaticQuery(graphql`
+  const { lineTop, lineBottom, plant } = useStaticQuery(graphql`
     query ImageQuery {
       lineTop: file(relativePath: { eq: "line-top.png" }) {
         childImageSharp {
@@ -42,13 +34,6 @@ const Hero = () => {
           }
         }
       }
-      newDate: file(relativePath: { eq: "new-date.png" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
     }
   `)
 
@@ -59,18 +44,11 @@ const Hero = () => {
       <Line fluid={lineTop.childImageSharp.fluid} alt="" />
       <h1>Zsuzsi & Peti</h1>
       <Line fluid={lineBottom.childImageSharp.fluid} alt="" />
-      <h2>2020.06.19</h2>
+      <h2>2021.06.18</h2>
       <h3>
         Dudok Rendezvényház, <br />
         Budakeszi
       </h3>
-      <div>
-        <NewDate
-          style={newDateImgStyle}
-          fluid={newDate.childImageSharp.fluid}
-          alt="Új dátum: 2021.06.18"
-        />
-      </div>
       <Plant fluid={plant.childImageSharp.fluid} alt="" />
       <Calendar />
       <Rsvp onClick={() => setModal(true)} disabled={isSent}>

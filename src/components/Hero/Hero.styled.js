@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import Img from 'gatsby-image'
 
 import { Wrapper, Button } from 'components/styles/shared'
@@ -20,15 +20,6 @@ export const HeroWrapper = styled(Wrapper)`
     margin-top: 2.5rem;
     margin-bottom: 0;
     position: relative;
-    :after {
-      border-bottom: 0.5rem solid #7a2b2d;
-      border-radius: 0.5rem;
-      content: '';
-      left: 0;
-      position: absolute;
-      right: 0;
-      bottom: 50%;
-    }
   }
 
   h3 {
