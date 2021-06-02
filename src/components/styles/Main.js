@@ -12,7 +12,8 @@ const Main = styled.main`
   height: 100vh;
   min-width: 320px;
 
-  h1 {
+  h1,
+  h2 {
     font-size: 3.5rem;
     text-transform: uppercase;
     color: ${colors.velvet};
@@ -22,13 +23,13 @@ const Main = styled.main`
     border-bottom: 1px solid black;
   }
 
-  h2 {
+  h3 {
     letter-spacing: 2.5px;
     font-size: 3rem;
     margin: 2rem auto;
   }
 
-  h3 {
+  h4 {
     color: ${colors.grey};
     font-weight: normal;
     font-size: 2rem;
@@ -41,34 +42,36 @@ const Main = styled.main`
 
   @media ${device.mobileL} {
     /* -> @media (min-width: 425px)" */
-    h1 {
+    h1,
+    h2 {
       font-size: 4rem;
       width: 370px;
     }
 
-    h2 {
+    h3 {
       letter-spacing: 3px;
       font-size: 3.5rem;
     }
 
-    h3 {
+    h4 {
       font-size: 2.5rem;
     }
   }
 
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
-    h1 {
+    h1,
+    h2 {
       font-size: 5rem;
       width: 500px;
     }
 
-    h2 {
+    h3 {
       letter-spacing: 3.5px;
       font-size: 4rem;
     }
 
-    h3 {
+    h4 {
       font-size: 3rem;
     }
 

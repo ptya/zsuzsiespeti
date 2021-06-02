@@ -35,14 +35,14 @@ const After = () => {
 
   return (
     <AfterWrapper id="after">
-      <h1>Buli után</h1>
-      <h2>Sofőrszolgálat</h2>
+      <h2>Buli után</h2>
+      <h3>Sofőrszolgálat</h3>
       <Contacts>
         GPR: +36 30 473 9379 <br />
         Speedboy: +36 70 344 0484 <br />
         Éjjeli Őrangyal: +36 20 988 8987
       </Contacts>
-      <h2>Taxi</h2>
+      <h3>Taxi</h3>
       <Contacts>
         6x6: +36 1 666 6666 <br />
         City Taxi: +36 1 211 1111 <br />

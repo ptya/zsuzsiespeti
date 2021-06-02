@@ -11,7 +11,7 @@ export const MenuWrapper = styled(Wrapper)`
   background-image: url(${background});
   width: 100%;
 
-  h1 {
+  h2 {
     margin-bottom: 0;
   }
 

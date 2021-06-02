@@ -33,7 +33,7 @@ const Schedule = () => {
   `)
   return (
     <ScheduleWrapper id="schedule">
-      <h1>Program</h1>
+      <h2>Program</h2>
       <p>
         Terveink szerint így zajlik majd a délután és az este, de nem esünk
         kétségbe, ha mégsem. <br />A lényeg, hogy gyere, és úgyis minden szuper

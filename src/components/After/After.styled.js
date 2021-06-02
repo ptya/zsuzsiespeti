@@ -91,11 +91,11 @@ export const AfterWrapper = styled(Wrapper)`
   background-image: url(${background});
   width: 100%;
 
-  h1 {
+  h2 {
     margin-bottom: 0;
   }
 
-  h2,
+  h3,
   ${Contacts} {
     font-family: 'Trajan Pro Regular', sans-serif;
     font-size: 1.5rem;
@@ -103,7 +103,7 @@ export const AfterWrapper = styled(Wrapper)`
     letter-spacing: 1px;
   }
 
-  h2 {
+  h3 {
     color: ${colors.green};
     margin: 3rem auto 0;
   }
@@ -114,7 +114,7 @@ export const AfterWrapper = styled(Wrapper)`
 
   @media ${device.tablet} {
     /* -> @media (min-width: 768px)" */
-    h2,
+    h3,
     ${Contacts} {
       font-family: 'Trajan Pro Regular', sans-serif;
       font-size: 1.9rem;

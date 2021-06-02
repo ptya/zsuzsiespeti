@@ -22,7 +22,7 @@ const Location = () => {
 
   return (
     <LocationWrapper id="location">
-      <h1>Helyszín</h1>
+      <h2>Helyszín</h2>
       <p>
         Dudok Rendezvényház és Étterem
         <a

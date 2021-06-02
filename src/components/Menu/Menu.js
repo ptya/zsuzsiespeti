@@ -18,7 +18,7 @@ const Menu = () => {
   `)
   return (
     <MenuWrapper id="menu">
-      <h1>Menü</h1>
+      <h2>Menü</h2>
       <p>Folyamatban...</p>
       <Plant fluid={plant.childImageSharp.fluid} alt="" />
     </MenuWrapper>

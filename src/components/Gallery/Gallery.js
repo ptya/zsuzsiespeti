@@ -40,7 +40,7 @@ const Gallery = () => {
   return (
     <GalleryWrapper id="gallery">
       <Info>
-        <h1>Galéria</h1>
+        <h2>Galéria</h2>
         <p>Idővel itt fogod megtalálni a legjobb közös pillanatainkat.</p>
         <p>Gyere vissza később!</p>
         <Camera fluid={camera.childImageSharp.fluid} alt="Kamera" />

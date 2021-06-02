@@ -7,7 +7,7 @@ import { Wrapper } from 'components/styles/shared'
 import leaves from 'assets/images/leaves.png'
 
 export const ScheduleWrapper = styled(Wrapper)`
-  h1 {
+  h2 {
     margin-bottom: 0;
   }
 

@@ -13,20 +13,21 @@ export const Wrapper = styled.article`
   overflow: hidden;
   z-index: 1;
 
-  h1 {
+  h1,
+  h2 {
     font-size: 2rem;
     color: ${colors.velvet};
     text-transform: uppercase;
     letter-spacing: 2px;
   }
 
-  h2 {
+  h3 {
     font-family: 'Trajan Pro Bold', sans-serif;
     font-size: 2rem;
     letter-spacing: 3px;
   }
 
-  h3 {
+  h4 {
     font-size: 1.5rem;
     letter-spacing: 1px;
   }
@@ -35,16 +36,17 @@ export const Wrapper = styled.article`
     /* -> @media (min-width: 768px)" */
     padding: 5rem 0;
 
-    h1 {
+    h1,
+    h2 {
       font-size: 4.6rem;
       letter-spacing: 3.45px;
     }
 
-    h2 {
+    h3 {
       font-size: 2.5rem;
       letter-spacing: 5px;
     }
-    h3 {
+    h4 {
       font-size: 2rem;
       letter-spacing: 1.5px;
     }
