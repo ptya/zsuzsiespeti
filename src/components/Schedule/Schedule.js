@@ -54,7 +54,7 @@ const Schedule = () => {
         <span>00:00 Éjféli menü</span>
       </Timetable>
       <p>
-        <Star /> Készpénzmentes. Puszit, igéretet, jókivánságot elfogadunk :)
+        <Star /> Készpénzmentes. Puszit, ígéretet, jókivánságot elfogadunk :)
       </p>
       <Plant1 fluid={plant.childImageSharp.fluid} alt="" style={plant1Style} />
       <Plant2 fluid={plant.childImageSharp.fluid} alt="" style={plant2Style} />
