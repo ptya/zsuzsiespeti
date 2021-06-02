@@ -24,6 +24,13 @@ export const ScheduleWrapper = styled(Wrapper)`
   }
 `
 
+export const Star = styled.span`
+  :after {
+    color: ${colors.velvet};
+    content: '*';
+  }
+`
+
 export const Line = styled(Img)`
   width: 22rem;
   margin: 1rem 0;

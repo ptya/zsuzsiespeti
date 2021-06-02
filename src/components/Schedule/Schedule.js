@@ -10,6 +10,7 @@ import {
   Plant2,
   plant1Style,
   plant2Style,
+  Star,
 } from './Schedule.styled'
 
 const Schedule = () => {
@@ -43,13 +44,18 @@ const Schedule = () => {
       <Timetable>
         <span>16:00 Vendégvárás</span>
         <span>17:00 Szertartás</span>
-        <span>17:30 Fotózkodás</span>
-        <span>18:30 Vacsora</span>
-        <span>20:30 Nyitótánc</span>
-        <span>22:00 Torta</span>
-        <span>23:30 Menyecsketánc</span>
+        <span>17:40 Fotózkodás</span>
+        <span>19:00 Vacsora</span>
+        <span>20:45 Vetítés</span>
+        <span>21:00 Ajándékozás</span>
+        <span>21:30 Nyitótánc</span>
+        <span>22:30 Torta</span>
+        <Star>23:30 Menyasszonytánc</Star>
         <span>00:00 Éjféli menü</span>
       </Timetable>
+      <p>
+        <Star /> Készpénzmentes. Puszit, igéretet, jókivánságot elfogadunk :)
+      </p>
       <Plant1 fluid={plant.childImageSharp.fluid} alt="" style={plant1Style} />
       <Plant2 fluid={plant.childImageSharp.fluid} alt="" style={plant2Style} />
     </ScheduleWrapper>
