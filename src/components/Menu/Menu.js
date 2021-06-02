@@ -39,7 +39,7 @@ const Menu = () => {
       <p>Töltött káposzta</p>
       <p>Kenegetős</p>
       <h3>Ital (korlátlan)</h3>
-      <p>Szénsavas üveges űdítők (Coca-Cola, Fanta, Sprite, Tonic stb.)</p>
+      <p>Szénsavas üveges üdítők (Coca-Cola, Fanta, Sprite, Tonic stb.)</p>
       <p>Rostos levek (narancslé 100%, baracklé, alma, Ice Tea stb.)</p>
       <p>Limonádé</p>
       <p>Ásványvíz (szénsavmentes is)</p>
