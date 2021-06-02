@@ -23,6 +23,8 @@ export const MenuWrapper = styled(Wrapper)`
     font-size: 1.2rem;
     letter-spacing: 0.9px;
     margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   br {
