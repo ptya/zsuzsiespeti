@@ -69,6 +69,7 @@ const Menu = () => {
       <p>Jägermeister</p>
       <p>Unicum</p>
       <p>Martini</p>
+      <p>Szicsek pálinkák</p>
       <p>Vilmoskörte pálinka</p>
       <p>Kosher szilvapálinka</p>
       <Plant fluid={plant.childImageSharp.fluid} alt="" />
