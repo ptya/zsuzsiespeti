@@ -37,7 +37,7 @@ const Hero = () => {
     }
   `)
 
-  const { setModal, isSent } = useContext(ModalContext)
+  // const { setModal, isSent } = useContext(ModalContext)
 
   return (
     <HeroWrapper>
@@ -51,7 +51,7 @@ const Hero = () => {
       </h3>
       <Plant fluid={plant.childImageSharp.fluid} alt="" />
       <Calendar />
-      <Rsvp onClick={() => setModal(true)} disabled={isSent}>
+      {/* <Rsvp onClick={() => setModal(true)} disabled={isSent}>
         {isSent ? 'Köszönjük' : 'Visszajelzés'}
       </Rsvp>
       <HiddenForm
@@ -65,7 +65,7 @@ const Hero = () => {
         <input type="text" name="name" />
         <input type="text" name="count" />
         <input type="text" name="note" />
-      </HiddenForm>
+      </HiddenForm> */}
     </HeroWrapper>
   )
 }

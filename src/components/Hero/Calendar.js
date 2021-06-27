@@ -19,7 +19,8 @@ const Calendar = () => {
 
   const now = new Date()
   const date = new Date(2021, 5, 18)
-  const days = Math.ceil((date.getTime() - now.getTime()) / (1000 * 3600 * 24))
+  const days =
+    Math.ceil((date.getTime() - now.getTime()) / (1000 * 3600 * 24)) * -1
 
   return (
     <Day>
@@ -29,7 +30,7 @@ const Calendar = () => {
         alt=""
       />
       <span>{days}</span>
-      <span>nap van még...</span>
+      <span>napja volt...</span>
     </Day>
   )
 }

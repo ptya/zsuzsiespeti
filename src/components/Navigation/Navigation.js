@@ -53,7 +53,7 @@ const Navigation = () => {
     <AnimatedNav style={animation}>
       <Burger open={isOpen} setOpen={setOpen} />
       <MenuWrapper open={isOpen}>
-        {!isSent && (
+        {/* {!isSent && (
           <>
             <button
               type="button"
@@ -66,7 +66,7 @@ const Navigation = () => {
             </button>
             <Divider />
           </>
-        )}
+        )} */}
         <a href="#schedule" onClick={() => isOpen && setOpen(false)}>
           Programok
         </a>
