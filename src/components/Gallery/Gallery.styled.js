@@ -89,3 +89,35 @@ export const Info = styled.div`
     }
   }
 `
+
+export const Album = styled.a`
+  width: 20rem;
+  height: 6rem;
+  border: 0;
+  font-family: 'Trajan Pro Regular', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  background: ${colors.green};
+  color: ${colors.lightBg};
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  :visited {
+    color: ${colors.lightBg};
+  }
+
+  :hover,
+  :focus {
+    background: ${colors.lightGreen};
+    color: ${colors.lightBg};
+  }
+
+  :active {
+    transform: translateY(1px);
+  }
+`

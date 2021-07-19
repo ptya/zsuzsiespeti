@@ -9,6 +9,7 @@ import {
   Plant,
   plantStyle,
   Info,
+  Album,
 } from './Gallery.styled'
 
 const Gallery = () => {
@@ -41,8 +42,13 @@ const Gallery = () => {
     <GalleryWrapper id="gallery">
       <Info>
         <h2>Galéria</h2>
-        <p>Idővel itt fogod megtalálni a legjobb közös pillanatainkat.</p>
-        <p>Gyere vissza később!</p>
+        <p>
+          A képeket az alábbi linken keresztül éritek el. Köszönjük, hogy ott
+          voltatok velünk!
+        </p>
+        <Album href="https://photos.app.goo.gl/CmP2gd5JSxbvfbiRA">
+          <span>Fotóalbum</span>
+        </Album>
         <Camera fluid={camera.childImageSharp.fluid} alt="Kamera" />
       </Info>
       <Photo fluid={photo.childImageSharp.fluid} alt="Rólunk" />
